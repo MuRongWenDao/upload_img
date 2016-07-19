@@ -1,0 +1,118 @@
+*{margin:0;padding:0;}
+.wrap{
+    width: 600px;
+    margin:50px auto;
+}
+.wl{
+    float:left;
+    width: 400px;
+    height:400px;
+    margin: 10px;
+}
+.wr{
+    float:left;
+    margin: 10px;
+    display: inline;
+}
+.jc-demo-box{
+    position: relative;
+    background-color: #e7e7e7;
+    width: 400px;
+    height: 340px;
+    overflow: hidden;
+    border: 1px solid #c8c8c8;
+}
+.jcrop_w{
+    width: 400px;
+    height: 340px;
+    overflow: hidden;
+}
+.jcrop_w img{ position: absolute;}
+.pre-1,.pre-2{ border: 1px solid #c8c8c8;}
+.pre-1{
+    width: 128px;
+    height: 128px;
+    overflow:hidden;
+}
+.pre-2{
+    width: 90px;
+    height: 90px;
+    overflow:hidden;
+    margin-top: 13px;
+}
+.portrait-save {
+    position: relative;
+    top:20px;
+}
+.portrait-save .file {
+    position: relative;
+    display: inline-block;
+    background: #20b6ad;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 6px 30px;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.portrait-save .file input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.portrait-save .file input:focus {
+    background: #eee;
+    color: #fff;
+    text-decoration: none;
+}
+
+.final-img{
+    /*border:1px solid #d3d3d3;
+    background:#ffffff;*/
+    display: none;
+}
+#myCanvas {
+    border:1px solid #d3d3d3;
+    background:#ffffff;
+    display: none;
+}
+.preview-title{
+    font-size: 18px;
+    line-height: 32px;
+}
+.sub-preview-title {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.clearfix{ zoom:1;}
+.clearfix:after{
+    display: block;
+    content: "";
+    clear: both;
+    visibility: hidden;
+}
+.save-btn{
+    padding: 6px 22px;
+    min-width: 120px;
+    color: #ffffff;
+    border-radius: 3px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+.save-btn{
+    background-color: #1FBBA6;
+    display: none;
+    position:absolute;
+    padding: 8px;
+    right: 0;
+    top: 2px;
+}
+
+
+

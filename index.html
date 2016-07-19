@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>上传头像插件</title>
+    <link href="css/basic.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.Jcrop.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jQuery.js"> </script>
+    <script type="text/javascript" src="js/jquery.Jcrop.js"> </script>
+    <script type="text/javascript" src="js/basic.js"> </script>
+</head>
+<body>
+<div class="wrap clearfix">
+    <div class="wl">
+        <div class="jc-demo-box" data="0">
+            <div  class="jcrop_w" > </div>
+        </div>
+        <div class="portrait-save">
+            <a href="#" class="file">
+                <input type="file"  id="imgUpload"  class="upload-btn" name="imgUpload" accept=".gif,.jpg,.png,.bmp,.psd," single/>选择图片
+            </a>
+            <button type="button" id="save_btn" class="btn save-btn" > 保存头像</button>
+        </div>
+    </div>
+
+    <div class="wr" id="preview-pane">
+        <p class="preview-title">头像预览</p>
+        <div class="preview-container">
+            <div class="pre-1">
+                <img src="" alt=""title="上传头像"  />
+            </div>
+            <p class="sub-preview-title">
+                <span>大头像128*128</span>
+            </p>
+            <div class="pre-2">
+                <img  src="" alt=""title="上传头像" />
+            </div>
+            <p class="sub-preview-title">
+                <span>小头像90*90</span>
+            </p>
+        </div>
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <div class="final-img"></div>
+</div>
+</body>
+</html>
