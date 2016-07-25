@@ -69,12 +69,7 @@
     color: #fff;
     text-decoration: none;
 }
-
-.final-img{
-    /*border:1px solid #d3d3d3;
-    background:#ffffff;*/
-    display: none;
-}
+.save-img{float:left;}
 #myCanvas {
     border:1px solid #d3d3d3;
     background:#ffffff;
@@ -96,23 +91,10 @@
     clear: both;
     visibility: hidden;
 }
-.save-btn{
-    padding: 6px 22px;
-    min-width: 120px;
-    color: #ffffff;
-    border-radius: 3px;
-    font-size: 14px;
-    border: none;
-    outline: none;
-}
-.save-btn{
-    background-color: #1FBBA6;
-    display: none;
-    position:absolute;
-    padding: 8px;
-    right: 0;
-    top: 2px;
-    cursor: pointer;
+
+.img-style{
+    width:60px;
+    margin-bottom: 10px;
 }
 
 

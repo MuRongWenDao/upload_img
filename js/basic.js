@@ -3,14 +3,9 @@ $(function(){
         big_pre_height = 128,
         sma_pre_width = 90,
         sma_pre_height = 90,
-        canvas_width = 200,
-        canvas_height = 200,
         box_width = 400,
         box_height = 340;
     upload_img();
-    $("#save_btn").click(function(){
-        $(".final-img").show();
-    })
     //图片上传
     function upload_img(){
         $("#imgUpload").change(function(e){
@@ -70,12 +65,12 @@ $(function(){
         var srcY = c.y;
         var srcW = c.w;
         var srcH = c.h;
-        canvas.width = canvas_width;
-        canvas.height = canvas_height;
+        canvas.width = $("#img-width").val();
+        canvas.height = $("#img-height").val();
         if ($('#myCanvas') == null)
             return false;
         var context =canvas.getContext("2d" );
-        context.drawImage(img,srcX,srcY,srcW,srcH,0,0, canvas_width, canvas_height);
+        context.drawImage(img,srcX,srcY,srcW,srcH,0,0, canvas.width, canvas.height);
 
         var imgURL = canvas.toDataURL("image/jpg");
         var img = '<img src="'+imgURL+'" />';

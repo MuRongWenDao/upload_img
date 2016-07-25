@@ -19,10 +19,9 @@
             <a href="#" class="file">
                 <input type="file"  id="imgUpload"  class="upload-btn" name="imgUpload" accept=".gif,.jpg,.png,.bmp,.psd," single/>选择图片
             </a>
-            <button type="button" id="save_btn" class="btn save-btn" > 保存头像</button>
+            <!--<button type="button" id="save_btn" class="btn save-btn" > 保存头像</button>-->
         </div>
     </div>
-
     <div class="wr" id="preview-pane">
         <p class="preview-title">头像预览</p>
         <div class="preview-container">
@@ -40,8 +39,14 @@
             </p>
         </div>
     </div>
-    <canvas id="myCanvas"></canvas>
-    <div class="final-img"></div>
+    <div class="save-img">
+        <p class="preview-title">请填写保存图片的宽高（单位：像素）</p>
+        宽：<input type="text" id="img-width" class="img-style" value="100">
+        高：<input type="text" id="img-height" class="img-style" value="100">
+        <canvas id="myCanvas"></canvas>
+        <div class="final-img"></div>
+    </div>
 </div>
+
 </body>
 </html>
